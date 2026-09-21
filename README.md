@@ -19,8 +19,11 @@ A personal expense manager web app for tracking day-to-day spending.
 - Database: —
 
 ## Running locally
+
+```bash
 make install
 make run
+```
 
 ## Live URL
 
