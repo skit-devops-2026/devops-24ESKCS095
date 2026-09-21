@@ -1,35 +1,48 @@
 # Personal Expense Manager
-> Replace every angle-bracket placeholder below. The hygiene check in CI will
-> fail until you do.
+
+A personal expense manager web application for tracking day-to-day spending.
 
 ## Author
 
-| Roll No.   | Name          | GitHub username         |
-| ---------- | ------------- | ------------------------ |
-| 24ESKCS095 | CHANDRA MOHAN | chandramohanm069-debug   |
+| Roll No. | Name | GitHub Username |
+|---|---|---|
+| 24ESKCS095 | CHANDRA MOHAN | chandramohamm069-debug |
 
 ## About
 
-A personal expense manager web app for tracking day-to-day spending.
+Personal Expense Manager is a web application designed to help users record and manage their daily expenses.
 
-## Tech stack
+## Features
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: —
-- Database: —
+- Add and manage expenses
+- Track daily spending
+- View expense information
+- User login and signup pages
+- Help and privacy information
+- Responsive web interface
 
-## Running locally
+## Tech Stack
 
-```bash
-make install
-make run
-```
+- HTML
+- CSS
+- JavaScript
 
-## Live URL
+## Project Structure
 
-<Add once M5 is done. Until then, leave as is.>
-
-## Health endpoint
-
-`GET /health` returns the running commit SHA. See `Makefile` and the milestone
-sheet for why this is required.
+```text
+.
+├── images/
+├── about.html
+├── add-expense.html
+├── contact.html
+├── expense.js
+├── features.html
+├── help.html
+├── index.html
+├── login.html
+├── main.css
+├── privacy.html
+├── script.js
+├── signup.html
+├── stories.html
+└── terms.html
