@@ -1,0 +1,30 @@
+{
+  "title": "Personal Expense Manager - Monitoring Dashboard",
+  "uid": "expense-manager",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "30s",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "App Up",
+      "targets": [{ "expr": "up{job=\"expense-manager-app\"}", "refId": "A" }],
+      "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Prometheus Scrape Duration (seconds)",
+      "targets": [{ "expr": "scrape_duration_seconds", "refId": "A" }],
+      "gridPos": { "x": 6, "y": 0, "w": 12, "h": 8 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Targets Up Over Time",
+      "targets": [{ "expr": "sum by (job) (up)", "refId": "A" }],
+      "gridPos": { "x": 0, "y": 8, "w": 12, "h": 8 }
+    }
+  ],
+  "annotations": { "list": [] },
+  "tags": ["expense-manager", "prometheus", "devops"],
+  "timezone": "browser"
+}

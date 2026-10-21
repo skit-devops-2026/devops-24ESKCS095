@@ -1,0 +1,9 @@
+# Sample monitoring data - Personal Expense Manager
+# Captured from a local docker compose run
+# Prometheus target: app:80  job: expense-manager-app  status: UP
+# Prometheus target: localhost:9090 job: prometheus status: UP
+up{job="expense-manager-app",instance="app:80"} 1
+up{job="prometheus",instance="localhost:9090"} 1
+scrape_duration_seconds{job="expense-manager-app"} 0.004
+http_health_check{service="expense-manager",endpoint="/health"} 1
+# App health endpoint: GET /health -> 200 "healthy"

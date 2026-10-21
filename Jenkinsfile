@@ -19,6 +19,12 @@ pipeline {
                 sh 'npm test'
             }
         }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t ghcr.io/skit-devops-2026/devops-24eskcs095:latest .'
+            }
+        }
     }
 
     post {
