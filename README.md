@@ -2,6 +2,8 @@
 
 A personal expense manager web application for tracking day-to-day spending.
 
+🔗 **Live Demo:** https://skit-devops-2026.github.io/devops-24ESKCS095/
+
 ## Author
 
 | Roll No. | Name | GitHub Username |
